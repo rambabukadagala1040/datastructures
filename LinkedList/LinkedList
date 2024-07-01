@@ -168,6 +168,16 @@ public class LinkedList {
             temp = after;
         }
     }
+
+    public Node findMiddle(){
+         Node slow = head;
+         Node fast = head;
+         while (fast != null && fast.next != null){
+             slow = slow.next;
+             fast = fast.next.next;
+         }
+         return slow;
+    }
     public void getHead(){
          System.out.println("head " + head.value);
     }
