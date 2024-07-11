@@ -2,15 +2,15 @@ package org.example.linkedList;
 
 public class Main {
     public static void main(String[] args){
-        LinkedList myLinkedList = new LinkedList(4);
-        myLinkedList.append(5);
-        myLinkedList.append(6);
-        myLinkedList.append(7);
-        myLinkedList.append(8);
-       myLinkedList.printList();
+ //       LinkedList myLinkedList = new LinkedList(4);
+//        myLinkedList.append(5);
+//        myLinkedList.append(6);
+//        myLinkedList.append(7);
+//        myLinkedList.append(8);
+//       myLinkedList.printList();
 
         // myLinkedList.getTail().next = myLinkedList.getHead();
-       System.out.println("******");
+       //System.out.println("******");
 //        myLinkedList.append(5);
 //        myLinkedList.append(6);
 //        myLinkedList.printList();
@@ -18,8 +18,20 @@ public class Main {
      //System.out.println(myLinkedList.findMiddle().value);
       // System.out.println(myLinkedList.hasLoop());
 
-        System.out.println(myLinkedList.kthNodeFromEnd(7).value);
+       // System.out.println(myLinkedList.kthNodeFromEnd(7).value);
 
+
+        //Example to rearrange the list
+        LinkedList myLinkedList = new LinkedList(1);
+        myLinkedList.append(4);
+        myLinkedList.append(5);
+        myLinkedList.append(3);
+        myLinkedList.append(2);
+        myLinkedList.append(1);
+               myLinkedList.printList();
+        System.out.println("****** after rearrange");
+        myLinkedList.rearrangeLL(3);
+        myLinkedList.printList();
 
     }
 }
