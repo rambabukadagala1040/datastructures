@@ -250,6 +250,44 @@ public class LinkedList {
         }
 
     }
+
+
+    public int binaryToDecimal() {
+        int num = 0;
+        Node current = head;
+        while (current != null) {
+            num = num * 2 + current.value;
+            current = current.next;
+        }
+        return num;
+    }
+
+    public void reverseBetweenLL(int x, int y){
+         Node dummy = new Node(0);
+         dummy.next  = head;
+
+         Node prev = null;
+         Node current = head;
+
+         Node leftPrev = dummy;
+         for(int i=1; i<x; i++){
+             leftPrev = leftPrev.next;
+             current = current.next;
+         }
+         Node holdHeadForReverse = leftPrev;
+         Node holdTailForReverse = current;
+         for(int i=0; i<=y-x; i++){
+            Node nextNode  = current.next;
+            current.next = prev;
+            prev = current;
+            current = nextNode;
+        }
+
+         holdHeadForReverse.next = prev;
+         holdTailForReverse.next = current;
+
+
+    }
     public Node getHead(){
          return head;
     }
