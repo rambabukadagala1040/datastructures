@@ -34,17 +34,39 @@ public class Main {
 //        myLinkedList.printList();
 
       //  Example to remove duplicates from the linked list
+//        LinkedList myLinkedList = new LinkedList(1);
+//        myLinkedList.append(2);
+//        myLinkedList.append(5);
+//        myLinkedList.append(3);
+//        myLinkedList.append(2);
+//        myLinkedList.append(1);
+//               myLinkedList.printList();
+//        System.out.println("****** after removal of duplicates");
+//        myLinkedList.removeDuplicates();
+//        myLinkedList.printList();
+
+        //  Example to remove duplicates from the linked list
+//        LinkedList myLinkedList = new LinkedList(1);
+//        myLinkedList.append(0);
+////        myLinkedList.append(1);
+////        myLinkedList.append(1);
+////        myLinkedList.append(1);
+//        myLinkedList.printList();
+//        System.out.println("****** after converting to decimal");
+//        System.out.println(myLinkedList.binaryToDecimal());
+
+
+
+        //  Example to remove duplicates from the linked list
         LinkedList myLinkedList = new LinkedList(1);
         myLinkedList.append(2);
-        myLinkedList.append(5);
         myLinkedList.append(3);
-        myLinkedList.append(2);
-        myLinkedList.append(1);
-               myLinkedList.printList();
-        System.out.println("****** after removal of duplicates");
-        myLinkedList.removeDuplicates();
+        myLinkedList.append(4);
+        myLinkedList.append(5);
         myLinkedList.printList();
-
+        System.out.println("****** after reversal in between ");
+       myLinkedList.reverseBetweenLL(2,4);
+        myLinkedList.printList();
 
     }
 }
